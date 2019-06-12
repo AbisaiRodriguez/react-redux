@@ -10,7 +10,9 @@ class Layout extends Component {
   }
 
   render () {
-    return (<img src="/img/bape.png" />)
+    return (<img src="/img/bape.png" />
+      <div>Hey</div>
+    )
   }
 }
 
