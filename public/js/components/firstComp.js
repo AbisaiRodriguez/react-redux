@@ -41,12 +41,43 @@ var Layout = function (_Component) {
   _createClass(Layout, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement('img', { src: '/img/bape.png' });
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(Header, null),
+        _react2.default.createElement('img', { src: '/img/bape.png' })
+      );
     }
   }]);
 
   return Layout;
 }(_react.Component);
+
+var Header = function Header() {
+  return _react2.default.createElement(
+    'header',
+    null,
+    _react2.default.createElement(
+      'ul',
+      null,
+      _react2.default.createElement(
+        'li',
+        null,
+        'Home'
+      ),
+      _react2.default.createElement(
+        'li',
+        null,
+        'About'
+      ),
+      _react2.default.createElement(
+        'li',
+        null,
+        'Contact'
+      )
+    )
+  );
+};
 
 var app = document.getElementById('app');
 
